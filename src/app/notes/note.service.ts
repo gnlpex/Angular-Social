@@ -55,7 +55,7 @@ export class NoteService {
   updateNote(id: string, data: Partial<Note>) {
     return this.getNote(id).update(data);
   }
-
+   
   deleteNote(id: string) {
     return this.getNote(id).delete();
   }
