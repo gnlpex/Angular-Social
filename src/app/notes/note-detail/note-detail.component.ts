@@ -23,6 +23,13 @@ export class NoteDetailComponent {
       console.error('Note missing ID!');
     }
   }
+  addDisToNote(val: number) {
+    if (this.note.id) {
+      this.noteService.updateNote(this.note.id, { dis: val + 1 });
+    } else {
+      console.error('Note missing ID!');
+    }
+  }
 
   deleteNote(id: string) {
     this.noteService.deleteNote(id);

@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
 interface NewNote {
   content: string;
   hearts: 0;
+  dis: 0;
   time: number;
 }
 
