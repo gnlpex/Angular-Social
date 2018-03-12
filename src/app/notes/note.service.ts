@@ -33,7 +33,7 @@ export class NoteService {
     return this.notesCollection.snapshotChanges().map((actions) => {
       return actions.map((a) => {
         const data = a.payload.doc.data() as Note;
-        return { id: a.payload.doc.id, content: data.content, hearts: data.hearts, time: data.time };
+        return { id: a.payload.doc.id, content: data.content, hearts: data.hearts, dis: data.dis, time: data.time };
       });
     });
   }
@@ -46,6 +46,7 @@ export class NoteService {
     const note = {
       content,
       hearts: 0,
+      dis: 0,
       time: new Date().getTime(),
     };
     return this.notesCollection.add(note);
