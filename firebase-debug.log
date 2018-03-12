@@ -60,3 +60,34 @@
     at ClientRequest.emit (events.js:211:7)
     at ClientRequest.onError (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tunnel-agent\index.js:179:21)
     at Object.onceWrapper (events.js:315:30)
+[debug] [2018-03-12T10:24:35.122Z] ----------------------------------------------------------------------
+[debug] [2018-03-12T10:24:35.124Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase login
+[debug] [2018-03-12T10:24:35.125Z] CLI Version:   3.17.6
+[debug] [2018-03-12T10:24:35.125Z] Platform:      win32
+[debug] [2018-03-12T10:24:35.125Z] Node Version:  v8.9.1
+[debug] [2018-03-12T10:24:35.130Z] Time:          Mon Mar 12 2018 18:24:35 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-03-12T10:24:35.130Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=995140776&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-03-12T10:24:58.463Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAAv2gzi1QCP3fDH8fyCauZJJuqg8yNeTXmZSiKcKW48COzfjU7EZRuuYdNeD1euDX2XAOnUUnf5EyK247XYdEo',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Mon Mar 12 2018 18:24:58 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-03-12T10:25:00.725Z] Token Fetch Error: Error
+    at new FirebaseError (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\error.js:11:17)
+    at Request._callback (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:34:23)
+    at self.callback (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:186:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:878:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at ClientRequest.onError (C:\Users\STUDENT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tunnel-agent\index.js:179:21)
+    at Object.onceWrapper (events.js:315:30)

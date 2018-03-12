@@ -16,7 +16,8 @@ export class NoteDetailComponent {
 
   constructor(private noteService: NoteService) { }
 
-  addHeartToNote(val: number) {
+  
+  addHeartToNote(val: number) { 
     if (this.note.id) {
       this.noteService.updateNote(this.note.id, { hearts: val + 1 });
     } else {
